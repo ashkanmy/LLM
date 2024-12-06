@@ -4,6 +4,7 @@ from loguru import logger
 pathString = '/Users/mansoash/LLM/src/db/story.txt'
 logger.add('/Users/mansoash/LLM/src/logs/logs.log')
 
+#define decoration
 @logger.catch
 def readData(pathString):    
     with open(pathString, "r", encoding="utf-8") as f:
